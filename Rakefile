@@ -53,4 +53,24 @@ namespace :rubric do
       end
     end
   end
+
+  desc 'Generate class/color CSV'
+  task :relate do
+
+    yaml = YAML::load_file('data/classify.yml')
+    klasses = yaml['klasses'].map { |k| k['name'] }
+
+    colors = []
+    File.open('data/color_bank.txt').each_line { |line| colors += line.split }
+    color_sample = colors.sample(klasses.size)
+
+    target = 'data/klass_kolors.csv'
+
+    File.open(target, 'w') do |file|
+      file.puts 'klass,kolor'
+      klasses.each do |klass|
+        file.puts "#{klass},#{color_sample.pop}"
+      end
+    end
+  end
 end
