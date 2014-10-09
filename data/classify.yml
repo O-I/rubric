@@ -1,0 +1,1857 @@
+klasses:
+  - name: Array
+    parent: Object
+    children:
+    ancestry:
+      - Array
+      - Columnize
+      - Enumerable
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - Array
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - Columnize
+      - Enumerable
+      - PP::ObjectMixin
+      - Kernel
+  - name: Bignum
+    parent: Integer
+    children:
+    ancestry:
+      - Bignum
+      - Integer
+      - Numeric
+      - Comparable
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - Bignum
+      - Integer
+      - Numeric
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - Comparable
+      - PP::ObjectMixin
+      - Kernel
+  - name: BasicObject
+    parent: 
+    children:
+      - Object
+    ancestry:
+      - BasicObject
+    direct_ancestry:
+      - BasicObject
+    collateral_ancestry:
+  - name: Object
+    parent: BasicObject
+    children:
+      - Array
+      - Module
+      - NilClass
+      - Numeric
+      - String
+      - Fiber
+      - Dir
+      - Encoding
+      - Enumerator
+      - Enumerator::Generator
+      - Enumerator::Yielder
+      - Exception
+      - File::Stat
+      - IO
+      - ObjectSpace::WeakMap
+      - Hash
+      - RubyVM
+      - RubyVM::InstructionSequence
+      - Data
+      - TrueClass
+      - FalseClass
+      - Thread
+      - Proc
+      - Method
+      - UnboundMethod
+      - Binding
+      - Process::Status
+      - Struct
+      - Random
+      - Range
+      - Regexp
+      - MatchData
+      - Symbol
+      - ThreadGroup
+      - Mutex
+      - Time
+      - RubyVM::Env
+      - Thread::Backtrace
+      - Thread::Backtrace::Location
+      - TracePoint
+    ancestry:
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - PP::ObjectMixin
+      - Kernel
+  - name: Module
+    parent: Object
+    children:
+      - Class
+    ancestry:
+      - Module
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - Module
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - PP::ObjectMixin
+      - Kernel
+  - name: Class
+    parent: Module
+    children:
+    ancestry:
+      - Class
+      - Module
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - Class
+      - Module
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - PP::ObjectMixin
+      - Kernel
+  - name: Complex
+    parent: Numeric
+    children:
+    ancestry:
+      - Complex
+      - Numeric
+      - Comparable
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - Complex
+      - Numeric
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - Comparable
+      - PP::ObjectMixin
+      - Kernel
+  - name: NilClass
+    parent: Object
+    children:
+    ancestry:
+      - NilClass
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - NilClass
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - PP::ObjectMixin
+      - Kernel
+  - name: Numeric
+    parent: Object
+    children:
+      - Complex
+      - Float
+      - Integer
+      - Rational
+    ancestry:
+      - Numeric
+      - Comparable
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - Numeric
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - Comparable
+      - PP::ObjectMixin
+      - Kernel
+  - name: String
+    parent: Object
+    children:
+    ancestry:
+      - String
+      - Comparable
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - String
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - Comparable
+      - PP::ObjectMixin
+      - Kernel
+  - name: Float
+    parent: Numeric
+    children:
+    ancestry:
+      - Float
+      - Numeric
+      - Comparable
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - Float
+      - Numeric
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - Comparable
+      - PP::ObjectMixin
+      - Kernel
+  - name: Fiber
+    parent: Object
+    children:
+    ancestry:
+      - Fiber
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - Fiber
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - PP::ObjectMixin
+      - Kernel
+  - name: FiberError
+    parent: StandardError
+    children:
+    ancestry:
+      - FiberError
+      - StandardError
+      - Exception
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - FiberError
+      - StandardError
+      - Exception
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - PP::ObjectMixin
+      - Kernel
+  - name: Dir
+    parent: Object
+    children:
+    ancestry:
+      - Dir
+      - Enumerable
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - Dir
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - Enumerable
+      - PP::ObjectMixin
+      - Kernel
+  - name: File
+    parent: IO
+    children:
+    ancestry:
+      - File
+      - IO
+      - File::Constants
+      - Enumerable
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - File
+      - IO
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - File::Constants
+      - Enumerable
+      - PP::ObjectMixin
+      - Kernel
+  - name: Encoding
+    parent: Object
+    children:
+    ancestry:
+      - Encoding
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - Encoding
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - PP::ObjectMixin
+      - Kernel
+  - name: Enumerator
+    parent: Object
+    children:
+      - Enumerator::Lazy
+    ancestry:
+      - Enumerator
+      - Enumerable
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - Enumerator
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - Enumerable
+      - PP::ObjectMixin
+      - Kernel
+  - name: StopIteration
+    parent: IndexError
+    children:
+    ancestry:
+      - StopIteration
+      - IndexError
+      - StandardError
+      - Exception
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - StopIteration
+      - IndexError
+      - StandardError
+      - Exception
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - PP::ObjectMixin
+      - Kernel
+  - name: Enumerator::Lazy
+    parent: Enumerator
+    children:
+    ancestry:
+      - Enumerator::Lazy
+      - Enumerator
+      - Enumerable
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - Enumerator::Lazy
+      - Enumerator
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - Enumerable
+      - PP::ObjectMixin
+      - Kernel
+  - name: Enumerator::Generator
+    parent: Object
+    children:
+    ancestry:
+      - Enumerator::Generator
+      - Enumerable
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - Enumerator::Generator
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - Enumerable
+      - PP::ObjectMixin
+      - Kernel
+  - name: Enumerator::Yielder
+    parent: Object
+    children:
+    ancestry:
+      - Enumerator::Yielder
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - Enumerator::Yielder
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - PP::ObjectMixin
+      - Kernel
+  - name: Exception
+    parent: Object
+    children:
+      - SystemExit
+      - SignalException
+      - StandardError
+      - ScriptError
+      - SecurityError
+      - NoMemoryError
+      - SystemStackError
+    ancestry:
+      - Exception
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - Exception
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - PP::ObjectMixin
+      - Kernel
+  - name: SystemExit
+    parent: Exception
+    children:
+    ancestry:
+      - SystemExit
+      - Exception
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - SystemExit
+      - Exception
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - PP::ObjectMixin
+      - Kernel
+  - name: SignalException
+    parent: Exception
+    children:
+      - Interrupt
+    ancestry:
+      - SignalException
+      - Exception
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - SignalException
+      - Exception
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - PP::ObjectMixin
+      - Kernel
+  - name: Interrupt
+    parent: SignalException
+    children:
+    ancestry:
+      - Interrupt
+      - SignalException
+      - Exception
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - Interrupt
+      - SignalException
+      - Exception
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - PP::ObjectMixin
+      - Kernel
+  - name: StandardError
+    parent: Exception
+    children:
+      - FiberError
+      - TypeError
+      - ArgumentError
+      - IndexError
+      - RangeError
+      - NameError
+      - RuntimeError
+      - EncodingError
+      - SystemCallError
+      - IOError
+      - Math::DomainError
+      - ZeroDivisionError
+      - LocalJumpError
+      - RegexpError
+      - ThreadError
+    ancestry:
+      - StandardError
+      - Exception
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - StandardError
+      - Exception
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - PP::ObjectMixin
+      - Kernel
+  - name: TypeError
+    parent: StandardError
+    children:
+    ancestry:
+      - TypeError
+      - StandardError
+      - Exception
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - TypeError
+      - StandardError
+      - Exception
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - PP::ObjectMixin
+      - Kernel
+  - name: ArgumentError
+    parent: StandardError
+    children:
+    ancestry:
+      - ArgumentError
+      - StandardError
+      - Exception
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - ArgumentError
+      - StandardError
+      - Exception
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - PP::ObjectMixin
+      - Kernel
+  - name: IndexError
+    parent: StandardError
+    children:
+      - StopIteration
+      - KeyError
+    ancestry:
+      - IndexError
+      - StandardError
+      - Exception
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - IndexError
+      - StandardError
+      - Exception
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - PP::ObjectMixin
+      - Kernel
+  - name: KeyError
+    parent: IndexError
+    children:
+    ancestry:
+      - KeyError
+      - IndexError
+      - StandardError
+      - Exception
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - KeyError
+      - IndexError
+      - StandardError
+      - Exception
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - PP::ObjectMixin
+      - Kernel
+  - name: RangeError
+    parent: StandardError
+    children:
+      - FloatDomainError
+    ancestry:
+      - RangeError
+      - StandardError
+      - Exception
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - RangeError
+      - StandardError
+      - Exception
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - PP::ObjectMixin
+      - Kernel
+  - name: ScriptError
+    parent: Exception
+    children:
+      - SyntaxError
+      - LoadError
+      - NotImplementedError
+    ancestry:
+      - ScriptError
+      - Exception
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - ScriptError
+      - Exception
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - PP::ObjectMixin
+      - Kernel
+  - name: SyntaxError
+    parent: ScriptError
+    children:
+    ancestry:
+      - SyntaxError
+      - ScriptError
+      - Exception
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - SyntaxError
+      - ScriptError
+      - Exception
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - PP::ObjectMixin
+      - Kernel
+  - name: LoadError
+    parent: ScriptError
+    children:
+    ancestry:
+      - LoadError
+      - ScriptError
+      - Exception
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - LoadError
+      - ScriptError
+      - Exception
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - PP::ObjectMixin
+      - Kernel
+  - name: NotImplementedError
+    parent: ScriptError
+    children:
+    ancestry:
+      - NotImplementedError
+      - ScriptError
+      - Exception
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - NotImplementedError
+      - ScriptError
+      - Exception
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - PP::ObjectMixin
+      - Kernel
+  - name: NameError
+    parent: StandardError
+    children:
+      - NoMethodError
+    ancestry:
+      - NameError
+      - StandardError
+      - Exception
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - NameError
+      - StandardError
+      - Exception
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - PP::ObjectMixin
+      - Kernel
+  - name: NoMethodError
+    parent: NameError
+    children:
+    ancestry:
+      - NoMethodError
+      - NameError
+      - StandardError
+      - Exception
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - NoMethodError
+      - NameError
+      - StandardError
+      - Exception
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - PP::ObjectMixin
+      - Kernel
+  - name: RuntimeError
+    parent: StandardError
+    children:
+    ancestry:
+      - RuntimeError
+      - StandardError
+      - Exception
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - RuntimeError
+      - StandardError
+      - Exception
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - PP::ObjectMixin
+      - Kernel
+  - name: SecurityError
+    parent: Exception
+    children:
+    ancestry:
+      - SecurityError
+      - Exception
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - SecurityError
+      - Exception
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - PP::ObjectMixin
+      - Kernel
+  - name: NoMemoryError
+    parent: Exception
+    children:
+    ancestry:
+      - NoMemoryError
+      - Exception
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - NoMemoryError
+      - Exception
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - PP::ObjectMixin
+      - Kernel
+  - name: EncodingError
+    parent: StandardError
+    children:
+      - Encoding::CompatibilityError
+      - Encoding::UndefinedConversionError
+      - Encoding::InvalidByteSequenceError
+      - Encoding::ConverterNotFoundError
+    ancestry:
+      - EncodingError
+      - StandardError
+      - Exception
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - EncodingError
+      - StandardError
+      - Exception
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - PP::ObjectMixin
+      - Kernel
+  - name: SystemCallError
+    parent: StandardError
+    children:
+    ancestry:
+      - SystemCallError
+      - StandardError
+      - Exception
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - SystemCallError
+      - StandardError
+      - Exception
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - PP::ObjectMixin
+      - Kernel
+  - name: Encoding::CompatibilityError
+    parent: EncodingError
+    children:
+    ancestry:
+      - Encoding::CompatibilityError
+      - EncodingError
+      - StandardError
+      - Exception
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - Encoding::CompatibilityError
+      - EncodingError
+      - StandardError
+      - Exception
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - PP::ObjectMixin
+      - Kernel
+  - name: File::Stat
+    parent: Object
+    children:
+    ancestry:
+      - File::Stat
+      - Comparable
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - File::Stat
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - Comparable
+      - PP::ObjectMixin
+      - Kernel
+  - name: IO
+    parent: Object
+    children:
+      - File
+    ancestry:
+      - IO
+      - File::Constants
+      - Enumerable
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - IO
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - File::Constants
+      - Enumerable
+      - PP::ObjectMixin
+      - Kernel
+  - name: ObjectSpace::WeakMap
+    parent: Object
+    children:
+    ancestry:
+      - ObjectSpace::WeakMap
+      - Enumerable
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - ObjectSpace::WeakMap
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - Enumerable
+      - PP::ObjectMixin
+      - Kernel
+  - name: Hash
+    parent: Object
+    children:
+    ancestry:
+      - Hash
+      - Enumerable
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - Hash
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - Enumerable
+      - PP::ObjectMixin
+      - Kernel
+  - name: IOError
+    parent: StandardError
+    children:
+      - EOFError
+    ancestry:
+      - IOError
+      - StandardError
+      - Exception
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - IOError
+      - StandardError
+      - Exception
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - PP::ObjectMixin
+      - Kernel
+  - name: EOFError
+    parent: IOError
+    children:
+    ancestry:
+      - EOFError
+      - IOError
+      - StandardError
+      - Exception
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - EOFError
+      - IOError
+      - StandardError
+      - Exception
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - PP::ObjectMixin
+      - Kernel
+  - name: IO::EAGAINWaitReadable
+    parent: Errno::EAGAIN
+    children:
+    ancestry:
+      - IO::EAGAINWaitReadable
+      - IO::WaitReadable
+      - Errno::EAGAIN
+      - SystemCallError
+      - StandardError
+      - Exception
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - IO::EAGAINWaitReadable
+      - Errno::EAGAIN
+      - SystemCallError
+      - StandardError
+      - Exception
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - IO::WaitReadable
+      - PP::ObjectMixin
+      - Kernel
+  - name: IO::EAGAINWaitWritable
+    parent: Errno::EAGAIN
+    children:
+    ancestry:
+      - IO::EAGAINWaitWritable
+      - IO::WaitWritable
+      - Errno::EAGAIN
+      - SystemCallError
+      - StandardError
+      - Exception
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - IO::EAGAINWaitWritable
+      - Errno::EAGAIN
+      - SystemCallError
+      - StandardError
+      - Exception
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - IO::WaitWritable
+      - PP::ObjectMixin
+      - Kernel
+  - name: IO::EAGAINWaitReadable
+    parent: Errno::EAGAIN
+    children:
+    ancestry:
+      - IO::EAGAINWaitReadable
+      - IO::WaitReadable
+      - Errno::EAGAIN
+      - SystemCallError
+      - StandardError
+      - Exception
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - IO::EAGAINWaitReadable
+      - Errno::EAGAIN
+      - SystemCallError
+      - StandardError
+      - Exception
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - IO::WaitReadable
+      - PP::ObjectMixin
+      - Kernel
+  - name: IO::EAGAINWaitWritable
+    parent: Errno::EAGAIN
+    children:
+    ancestry:
+      - IO::EAGAINWaitWritable
+      - IO::WaitWritable
+      - Errno::EAGAIN
+      - SystemCallError
+      - StandardError
+      - Exception
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - IO::EAGAINWaitWritable
+      - Errno::EAGAIN
+      - SystemCallError
+      - StandardError
+      - Exception
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - IO::WaitWritable
+      - PP::ObjectMixin
+      - Kernel
+  - name: IO::EINPROGRESSWaitReadable
+    parent: Errno::EINPROGRESS
+    children:
+    ancestry:
+      - IO::EINPROGRESSWaitReadable
+      - IO::WaitReadable
+      - Errno::EINPROGRESS
+      - SystemCallError
+      - StandardError
+      - Exception
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - IO::EINPROGRESSWaitReadable
+      - Errno::EINPROGRESS
+      - SystemCallError
+      - StandardError
+      - Exception
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - IO::WaitReadable
+      - PP::ObjectMixin
+      - Kernel
+  - name: IO::EINPROGRESSWaitWritable
+    parent: Errno::EINPROGRESS
+    children:
+    ancestry:
+      - IO::EINPROGRESSWaitWritable
+      - IO::WaitWritable
+      - Errno::EINPROGRESS
+      - SystemCallError
+      - StandardError
+      - Exception
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - IO::EINPROGRESSWaitWritable
+      - Errno::EINPROGRESS
+      - SystemCallError
+      - StandardError
+      - Exception
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - IO::WaitWritable
+      - PP::ObjectMixin
+      - Kernel
+  - name: RubyVM
+    parent: Object
+    children:
+    ancestry:
+      - RubyVM
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - RubyVM
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - PP::ObjectMixin
+      - Kernel
+  - name: RubyVM::InstructionSequence
+    parent: Object
+    children:
+    ancestry:
+      - RubyVM::InstructionSequence
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - RubyVM::InstructionSequence
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - PP::ObjectMixin
+      - Kernel
+  - name: Math::DomainError
+    parent: StandardError
+    children:
+    ancestry:
+      - Math::DomainError
+      - StandardError
+      - Exception
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - Math::DomainError
+      - StandardError
+      - Exception
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - PP::ObjectMixin
+      - Kernel
+  - name: ZeroDivisionError
+    parent: StandardError
+    children:
+    ancestry:
+      - ZeroDivisionError
+      - StandardError
+      - Exception
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - ZeroDivisionError
+      - StandardError
+      - Exception
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - PP::ObjectMixin
+      - Kernel
+  - name: FloatDomainError
+    parent: RangeError
+    children:
+    ancestry:
+      - FloatDomainError
+      - RangeError
+      - StandardError
+      - Exception
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - FloatDomainError
+      - RangeError
+      - StandardError
+      - Exception
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - PP::ObjectMixin
+      - Kernel
+  - name: Integer
+    parent: Numeric
+    children:
+      - Bignum
+      - Fixnum
+    ancestry:
+      - Integer
+      - Numeric
+      - Comparable
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - Integer
+      - Numeric
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - Comparable
+      - PP::ObjectMixin
+      - Kernel
+  - name: Fixnum
+    parent: Integer
+    children:
+    ancestry:
+      - Fixnum
+      - Integer
+      - Numeric
+      - Comparable
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - Fixnum
+      - Integer
+      - Numeric
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - Comparable
+      - PP::ObjectMixin
+      - Kernel
+  - name: Data
+    parent: Object
+    children:
+      - Encoding::Converter
+    ancestry:
+      - Data
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - Data
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - PP::ObjectMixin
+      - Kernel
+  - name: TrueClass
+    parent: Object
+    children:
+    ancestry:
+      - TrueClass
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - TrueClass
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - PP::ObjectMixin
+      - Kernel
+  - name: FalseClass
+    parent: Object
+    children:
+    ancestry:
+      - FalseClass
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - FalseClass
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - PP::ObjectMixin
+      - Kernel
+  - name: Thread
+    parent: Object
+    children:
+    ancestry:
+      - Thread
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - Thread
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - PP::ObjectMixin
+      - Kernel
+  - name: Proc
+    parent: Object
+    children:
+    ancestry:
+      - Proc
+      - MethodSource::MethodExtensions
+      - MethodSource::SourceLocation::ProcExtensions
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - Proc
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - MethodSource::MethodExtensions
+      - MethodSource::SourceLocation::ProcExtensions
+      - PP::ObjectMixin
+      - Kernel
+  - name: LocalJumpError
+    parent: StandardError
+    children:
+    ancestry:
+      - LocalJumpError
+      - StandardError
+      - Exception
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - LocalJumpError
+      - StandardError
+      - Exception
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - PP::ObjectMixin
+      - Kernel
+  - name: SystemStackError
+    parent: Exception
+    children:
+    ancestry:
+      - SystemStackError
+      - Exception
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - SystemStackError
+      - Exception
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - PP::ObjectMixin
+      - Kernel
+  - name: Method
+    parent: Object
+    children:
+    ancestry:
+      - Method
+      - MethodSource::MethodExtensions
+      - MethodSource::SourceLocation::MethodExtensions
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - Method
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - MethodSource::MethodExtensions
+      - MethodSource::SourceLocation::MethodExtensions
+      - PP::ObjectMixin
+      - Kernel
+  - name: UnboundMethod
+    parent: Object
+    children:
+    ancestry:
+      - UnboundMethod
+      - MethodSource::MethodExtensions
+      - MethodSource::SourceLocation::UnboundMethodExtensions
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - UnboundMethod
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - MethodSource::MethodExtensions
+      - MethodSource::SourceLocation::UnboundMethodExtensions
+      - PP::ObjectMixin
+      - Kernel
+  - name: Binding
+    parent: Object
+    children:
+    ancestry:
+      - Binding
+      - BindingOfCaller::BindingExtensions
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - Binding
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - BindingOfCaller::BindingExtensions
+      - PP::ObjectMixin
+      - Kernel
+  - name: Process::Status
+    parent: Object
+    children:
+    ancestry:
+      - Process::Status
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - Process::Status
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - PP::ObjectMixin
+      - Kernel
+  - name: Struct
+    parent: Object
+    children:
+    ancestry:
+      - Struct
+      - Enumerable
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - Struct
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - Enumerable
+      - PP::ObjectMixin
+      - Kernel
+  - name: Random
+    parent: Object
+    children:
+    ancestry:
+      - Random
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - Random
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - PP::ObjectMixin
+      - Kernel
+  - name: Range
+    parent: Object
+    children:
+    ancestry:
+      - Range
+      - Enumerable
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - Range
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - Enumerable
+      - PP::ObjectMixin
+      - Kernel
+  - name: Rational
+    parent: Numeric
+    children:
+    ancestry:
+      - Rational
+      - Numeric
+      - Comparable
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - Rational
+      - Numeric
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - Comparable
+      - PP::ObjectMixin
+      - Kernel
+  - name: RegexpError
+    parent: StandardError
+    children:
+    ancestry:
+      - RegexpError
+      - StandardError
+      - Exception
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - RegexpError
+      - StandardError
+      - Exception
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - PP::ObjectMixin
+      - Kernel
+  - name: Regexp
+    parent: Object
+    children:
+    ancestry:
+      - Regexp
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - Regexp
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - PP::ObjectMixin
+      - Kernel
+  - name: MatchData
+    parent: Object
+    children:
+    ancestry:
+      - MatchData
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - MatchData
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - PP::ObjectMixin
+      - Kernel
+  - name: Symbol
+    parent: Object
+    children:
+    ancestry:
+      - Symbol
+      - Comparable
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - Symbol
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - Comparable
+      - PP::ObjectMixin
+      - Kernel
+  - name: ThreadGroup
+    parent: Object
+    children:
+    ancestry:
+      - ThreadGroup
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - ThreadGroup
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - PP::ObjectMixin
+      - Kernel
+  - name: Mutex
+    parent: Object
+    children:
+    ancestry:
+      - Mutex
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - Mutex
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - PP::ObjectMixin
+      - Kernel
+  - name: ThreadError
+    parent: StandardError
+    children:
+    ancestry:
+      - ThreadError
+      - StandardError
+      - Exception
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - ThreadError
+      - StandardError
+      - Exception
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - PP::ObjectMixin
+      - Kernel
+  - name: Time
+    parent: Object
+    children:
+    ancestry:
+      - Time
+      - Comparable
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - Time
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - Comparable
+      - PP::ObjectMixin
+      - Kernel
+  - name: Encoding::UndefinedConversionError
+    parent: EncodingError
+    children:
+    ancestry:
+      - Encoding::UndefinedConversionError
+      - EncodingError
+      - StandardError
+      - Exception
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - Encoding::UndefinedConversionError
+      - EncodingError
+      - StandardError
+      - Exception
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - PP::ObjectMixin
+      - Kernel
+  - name: Encoding::InvalidByteSequenceError
+    parent: EncodingError
+    children:
+    ancestry:
+      - Encoding::InvalidByteSequenceError
+      - EncodingError
+      - StandardError
+      - Exception
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - Encoding::InvalidByteSequenceError
+      - EncodingError
+      - StandardError
+      - Exception
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - PP::ObjectMixin
+      - Kernel
+  - name: Encoding::ConverterNotFoundError
+    parent: EncodingError
+    children:
+    ancestry:
+      - Encoding::ConverterNotFoundError
+      - EncodingError
+      - StandardError
+      - Exception
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - Encoding::ConverterNotFoundError
+      - EncodingError
+      - StandardError
+      - Exception
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - PP::ObjectMixin
+      - Kernel
+  - name: Encoding::Converter
+    parent: Data
+    children:
+    ancestry:
+      - Encoding::Converter
+      - Data
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - Encoding::Converter
+      - Data
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - PP::ObjectMixin
+      - Kernel
+  - name: RubyVM::Env
+    parent: Object
+    children:
+    ancestry:
+      - RubyVM::Env
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - RubyVM::Env
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - PP::ObjectMixin
+      - Kernel
+  - name: Thread::Backtrace
+    parent: Object
+    children:
+    ancestry:
+      - Thread::Backtrace
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - Thread::Backtrace
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - PP::ObjectMixin
+      - Kernel
+  - name: Thread::Backtrace::Location
+    parent: Object
+    children:
+    ancestry:
+      - Thread::Backtrace::Location
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - Thread::Backtrace::Location
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - PP::ObjectMixin
+      - Kernel
+  - name: TracePoint
+    parent: Object
+    children:
+    ancestry:
+      - TracePoint
+      - Object
+      - PP::ObjectMixin
+      - Kernel
+      - BasicObject
+    direct_ancestry:
+      - TracePoint
+      - Object
+      - BasicObject
+    collateral_ancestry:
+      - PP::ObjectMixin
+      - Kernel
