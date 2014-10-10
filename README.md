@@ -1,3 +1,5 @@
 # Rubric
 
-D3 visualization of Ruby classes
+### D3 visualizations of Ruby
+
+Currently only one: a chord layout diagram of Ruby core class inheritance.
