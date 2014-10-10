@@ -128,10 +128,6 @@ body > pre {
   padding-left: 18px;
   margin: 2em 0 2em -20px;
 }
-
-svg {
-  margin-top: 50px;
-}
  
 .html .value,
 .javascript .string,
