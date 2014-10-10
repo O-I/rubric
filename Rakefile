@@ -14,8 +14,9 @@ namespace :rubric do
     html = Nokogiri::HTML(open(source))
     ruby_classes = html.css('.class a').map(&:text)
     blacklist = %w(Complex::compatible Continuation fatal unknown
-                      Rational::compatible ENV ARGF)
+                   Rational::compatible ENV ARGF)
     ruby_classes -= blacklist
+    ruby_classes = ruby_classes.select { |c| c !~ /^IO::E/ }
     ruby_classes.map! { |c| Object.const_get(c) }
     parents, children, ancestry = {}, {}, {}
     direct_ancestry, collateral_ancestry = {}, {}

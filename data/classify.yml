@@ -4,9 +4,11 @@ klasses:
     children:
     ancestry:
       - Array
+      - JSON::Ext::Generator::GeneratorMethods::Array
       - Columnize
       - Enumerable
       - Object
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
       - BasicObject
@@ -15,8 +17,10 @@ klasses:
       - Object
       - BasicObject
     collateral_ancestry:
+      - JSON::Ext::Generator::GeneratorMethods::Array
       - Columnize
       - Enumerable
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
   - name: Bignum
@@ -24,10 +28,12 @@ klasses:
     children:
     ancestry:
       - Bignum
+      - JSON::Ext::Generator::GeneratorMethods::Bignum
       - Integer
       - Numeric
       - Comparable
       - Object
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
       - BasicObject
@@ -38,7 +44,9 @@ klasses:
       - Object
       - BasicObject
     collateral_ancestry:
+      - JSON::Ext::Generator::GeneratorMethods::Bignum
       - Comparable
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
   - name: BasicObject
@@ -95,6 +103,7 @@ klasses:
       - TracePoint
     ancestry:
       - Object
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
       - BasicObject
@@ -102,6 +111,7 @@ klasses:
       - Object
       - BasicObject
     collateral_ancestry:
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
   - name: Module
@@ -111,6 +121,7 @@ klasses:
     ancestry:
       - Module
       - Object
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
       - BasicObject
@@ -119,6 +130,7 @@ klasses:
       - Object
       - BasicObject
     collateral_ancestry:
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
   - name: Class
@@ -128,6 +140,7 @@ klasses:
       - Class
       - Module
       - Object
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
       - BasicObject
@@ -137,6 +150,7 @@ klasses:
       - Object
       - BasicObject
     collateral_ancestry:
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
   - name: Complex
@@ -147,6 +161,7 @@ klasses:
       - Numeric
       - Comparable
       - Object
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
       - BasicObject
@@ -157,6 +172,7 @@ klasses:
       - BasicObject
     collateral_ancestry:
       - Comparable
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
   - name: NilClass
@@ -164,7 +180,9 @@ klasses:
     children:
     ancestry:
       - NilClass
+      - JSON::Ext::Generator::GeneratorMethods::NilClass
       - Object
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
       - BasicObject
@@ -173,6 +191,8 @@ klasses:
       - Object
       - BasicObject
     collateral_ancestry:
+      - JSON::Ext::Generator::GeneratorMethods::NilClass
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
   - name: Numeric
@@ -186,6 +206,7 @@ klasses:
       - Numeric
       - Comparable
       - Object
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
       - BasicObject
@@ -195,6 +216,7 @@ klasses:
       - BasicObject
     collateral_ancestry:
       - Comparable
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
   - name: String
@@ -202,8 +224,10 @@ klasses:
     children:
     ancestry:
       - String
+      - JSON::Ext::Generator::GeneratorMethods::String
       - Comparable
       - Object
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
       - BasicObject
@@ -212,7 +236,9 @@ klasses:
       - Object
       - BasicObject
     collateral_ancestry:
+      - JSON::Ext::Generator::GeneratorMethods::String
       - Comparable
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
   - name: Float
@@ -220,9 +246,11 @@ klasses:
     children:
     ancestry:
       - Float
+      - JSON::Ext::Generator::GeneratorMethods::Float
       - Numeric
       - Comparable
       - Object
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
       - BasicObject
@@ -232,7 +260,9 @@ klasses:
       - Object
       - BasicObject
     collateral_ancestry:
+      - JSON::Ext::Generator::GeneratorMethods::Float
       - Comparable
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
   - name: Fiber
@@ -241,6 +271,7 @@ klasses:
     ancestry:
       - Fiber
       - Object
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
       - BasicObject
@@ -249,6 +280,7 @@ klasses:
       - Object
       - BasicObject
     collateral_ancestry:
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
   - name: FiberError
@@ -259,6 +291,7 @@ klasses:
       - StandardError
       - Exception
       - Object
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
       - BasicObject
@@ -269,6 +302,7 @@ klasses:
       - Object
       - BasicObject
     collateral_ancestry:
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
   - name: Dir
@@ -278,6 +312,7 @@ klasses:
       - Dir
       - Enumerable
       - Object
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
       - BasicObject
@@ -287,6 +322,7 @@ klasses:
       - BasicObject
     collateral_ancestry:
       - Enumerable
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
   - name: File
@@ -298,6 +334,7 @@ klasses:
       - File::Constants
       - Enumerable
       - Object
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
       - BasicObject
@@ -309,6 +346,7 @@ klasses:
     collateral_ancestry:
       - File::Constants
       - Enumerable
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
   - name: Encoding
@@ -317,6 +355,7 @@ klasses:
     ancestry:
       - Encoding
       - Object
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
       - BasicObject
@@ -325,6 +364,7 @@ klasses:
       - Object
       - BasicObject
     collateral_ancestry:
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
   - name: Enumerator
@@ -335,6 +375,7 @@ klasses:
       - Enumerator
       - Enumerable
       - Object
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
       - BasicObject
@@ -344,6 +385,7 @@ klasses:
       - BasicObject
     collateral_ancestry:
       - Enumerable
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
   - name: StopIteration
@@ -355,6 +397,7 @@ klasses:
       - StandardError
       - Exception
       - Object
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
       - BasicObject
@@ -366,6 +409,7 @@ klasses:
       - Object
       - BasicObject
     collateral_ancestry:
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
   - name: Enumerator::Lazy
@@ -376,6 +420,7 @@ klasses:
       - Enumerator
       - Enumerable
       - Object
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
       - BasicObject
@@ -386,6 +431,7 @@ klasses:
       - BasicObject
     collateral_ancestry:
       - Enumerable
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
   - name: Enumerator::Generator
@@ -395,6 +441,7 @@ klasses:
       - Enumerator::Generator
       - Enumerable
       - Object
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
       - BasicObject
@@ -404,6 +451,7 @@ klasses:
       - BasicObject
     collateral_ancestry:
       - Enumerable
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
   - name: Enumerator::Yielder
@@ -412,6 +460,7 @@ klasses:
     ancestry:
       - Enumerator::Yielder
       - Object
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
       - BasicObject
@@ -420,6 +469,7 @@ klasses:
       - Object
       - BasicObject
     collateral_ancestry:
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
   - name: Exception
@@ -435,6 +485,7 @@ klasses:
     ancestry:
       - Exception
       - Object
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
       - BasicObject
@@ -443,6 +494,7 @@ klasses:
       - Object
       - BasicObject
     collateral_ancestry:
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
   - name: SystemExit
@@ -452,6 +504,7 @@ klasses:
       - SystemExit
       - Exception
       - Object
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
       - BasicObject
@@ -461,6 +514,7 @@ klasses:
       - Object
       - BasicObject
     collateral_ancestry:
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
   - name: SignalException
@@ -471,6 +525,7 @@ klasses:
       - SignalException
       - Exception
       - Object
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
       - BasicObject
@@ -480,6 +535,7 @@ klasses:
       - Object
       - BasicObject
     collateral_ancestry:
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
   - name: Interrupt
@@ -490,6 +546,7 @@ klasses:
       - SignalException
       - Exception
       - Object
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
       - BasicObject
@@ -500,6 +557,7 @@ klasses:
       - Object
       - BasicObject
     collateral_ancestry:
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
   - name: StandardError
@@ -524,6 +582,7 @@ klasses:
       - StandardError
       - Exception
       - Object
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
       - BasicObject
@@ -533,6 +592,7 @@ klasses:
       - Object
       - BasicObject
     collateral_ancestry:
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
   - name: TypeError
@@ -543,6 +603,7 @@ klasses:
       - StandardError
       - Exception
       - Object
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
       - BasicObject
@@ -553,6 +614,7 @@ klasses:
       - Object
       - BasicObject
     collateral_ancestry:
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
   - name: ArgumentError
@@ -563,6 +625,7 @@ klasses:
       - StandardError
       - Exception
       - Object
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
       - BasicObject
@@ -573,6 +636,7 @@ klasses:
       - Object
       - BasicObject
     collateral_ancestry:
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
   - name: IndexError
@@ -585,6 +649,7 @@ klasses:
       - StandardError
       - Exception
       - Object
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
       - BasicObject
@@ -595,6 +660,7 @@ klasses:
       - Object
       - BasicObject
     collateral_ancestry:
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
   - name: KeyError
@@ -606,6 +672,7 @@ klasses:
       - StandardError
       - Exception
       - Object
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
       - BasicObject
@@ -617,6 +684,7 @@ klasses:
       - Object
       - BasicObject
     collateral_ancestry:
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
   - name: RangeError
@@ -628,6 +696,7 @@ klasses:
       - StandardError
       - Exception
       - Object
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
       - BasicObject
@@ -638,6 +707,7 @@ klasses:
       - Object
       - BasicObject
     collateral_ancestry:
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
   - name: ScriptError
@@ -650,6 +720,7 @@ klasses:
       - ScriptError
       - Exception
       - Object
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
       - BasicObject
@@ -659,6 +730,7 @@ klasses:
       - Object
       - BasicObject
     collateral_ancestry:
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
   - name: SyntaxError
@@ -669,6 +741,7 @@ klasses:
       - ScriptError
       - Exception
       - Object
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
       - BasicObject
@@ -679,6 +752,7 @@ klasses:
       - Object
       - BasicObject
     collateral_ancestry:
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
   - name: LoadError
@@ -689,6 +763,7 @@ klasses:
       - ScriptError
       - Exception
       - Object
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
       - BasicObject
@@ -699,6 +774,7 @@ klasses:
       - Object
       - BasicObject
     collateral_ancestry:
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
   - name: NotImplementedError
@@ -709,6 +785,7 @@ klasses:
       - ScriptError
       - Exception
       - Object
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
       - BasicObject
@@ -719,6 +796,7 @@ klasses:
       - Object
       - BasicObject
     collateral_ancestry:
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
   - name: NameError
@@ -730,6 +808,7 @@ klasses:
       - StandardError
       - Exception
       - Object
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
       - BasicObject
@@ -740,6 +819,7 @@ klasses:
       - Object
       - BasicObject
     collateral_ancestry:
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
   - name: NoMethodError
@@ -751,6 +831,7 @@ klasses:
       - StandardError
       - Exception
       - Object
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
       - BasicObject
@@ -762,6 +843,7 @@ klasses:
       - Object
       - BasicObject
     collateral_ancestry:
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
   - name: RuntimeError
@@ -772,6 +854,7 @@ klasses:
       - StandardError
       - Exception
       - Object
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
       - BasicObject
@@ -782,6 +865,7 @@ klasses:
       - Object
       - BasicObject
     collateral_ancestry:
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
   - name: SecurityError
@@ -791,6 +875,7 @@ klasses:
       - SecurityError
       - Exception
       - Object
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
       - BasicObject
@@ -800,6 +885,7 @@ klasses:
       - Object
       - BasicObject
     collateral_ancestry:
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
   - name: NoMemoryError
@@ -809,6 +895,7 @@ klasses:
       - NoMemoryError
       - Exception
       - Object
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
       - BasicObject
@@ -818,6 +905,7 @@ klasses:
       - Object
       - BasicObject
     collateral_ancestry:
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
   - name: EncodingError
@@ -832,6 +920,7 @@ klasses:
       - StandardError
       - Exception
       - Object
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
       - BasicObject
@@ -842,6 +931,7 @@ klasses:
       - Object
       - BasicObject
     collateral_ancestry:
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
   - name: SystemCallError
@@ -852,6 +942,7 @@ klasses:
       - StandardError
       - Exception
       - Object
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
       - BasicObject
@@ -862,6 +953,7 @@ klasses:
       - Object
       - BasicObject
     collateral_ancestry:
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
   - name: Encoding::CompatibilityError
@@ -873,6 +965,7 @@ klasses:
       - StandardError
       - Exception
       - Object
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
       - BasicObject
@@ -884,6 +977,7 @@ klasses:
       - Object
       - BasicObject
     collateral_ancestry:
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
   - name: File::Stat
@@ -893,6 +987,7 @@ klasses:
       - File::Stat
       - Comparable
       - Object
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
       - BasicObject
@@ -902,6 +997,7 @@ klasses:
       - BasicObject
     collateral_ancestry:
       - Comparable
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
   - name: IO
@@ -913,6 +1009,7 @@ klasses:
       - File::Constants
       - Enumerable
       - Object
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
       - BasicObject
@@ -923,6 +1020,7 @@ klasses:
     collateral_ancestry:
       - File::Constants
       - Enumerable
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
   - name: ObjectSpace::WeakMap
@@ -932,6 +1030,7 @@ klasses:
       - ObjectSpace::WeakMap
       - Enumerable
       - Object
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
       - BasicObject
@@ -941,6 +1040,7 @@ klasses:
       - BasicObject
     collateral_ancestry:
       - Enumerable
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
   - name: Hash
@@ -948,8 +1048,10 @@ klasses:
     children:
     ancestry:
       - Hash
+      - JSON::Ext::Generator::GeneratorMethods::Hash
       - Enumerable
       - Object
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
       - BasicObject
@@ -958,7 +1060,9 @@ klasses:
       - Object
       - BasicObject
     collateral_ancestry:
+      - JSON::Ext::Generator::GeneratorMethods::Hash
       - Enumerable
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
   - name: IOError
@@ -970,6 +1074,7 @@ klasses:
       - StandardError
       - Exception
       - Object
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
       - BasicObject
@@ -980,6 +1085,7 @@ klasses:
       - Object
       - BasicObject
     collateral_ancestry:
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
   - name: EOFError
@@ -991,6 +1097,7 @@ klasses:
       - StandardError
       - Exception
       - Object
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
       - BasicObject
@@ -1002,162 +1109,7 @@ klasses:
       - Object
       - BasicObject
     collateral_ancestry:
-      - PP::ObjectMixin
-      - Kernel
-  - name: IO::EAGAINWaitReadable
-    parent: Errno::EAGAIN
-    children:
-    ancestry:
-      - IO::EAGAINWaitReadable
-      - IO::WaitReadable
-      - Errno::EAGAIN
-      - SystemCallError
-      - StandardError
-      - Exception
-      - Object
-      - PP::ObjectMixin
-      - Kernel
-      - BasicObject
-    direct_ancestry:
-      - IO::EAGAINWaitReadable
-      - Errno::EAGAIN
-      - SystemCallError
-      - StandardError
-      - Exception
-      - Object
-      - BasicObject
-    collateral_ancestry:
-      - IO::WaitReadable
-      - PP::ObjectMixin
-      - Kernel
-  - name: IO::EAGAINWaitWritable
-    parent: Errno::EAGAIN
-    children:
-    ancestry:
-      - IO::EAGAINWaitWritable
-      - IO::WaitWritable
-      - Errno::EAGAIN
-      - SystemCallError
-      - StandardError
-      - Exception
-      - Object
-      - PP::ObjectMixin
-      - Kernel
-      - BasicObject
-    direct_ancestry:
-      - IO::EAGAINWaitWritable
-      - Errno::EAGAIN
-      - SystemCallError
-      - StandardError
-      - Exception
-      - Object
-      - BasicObject
-    collateral_ancestry:
-      - IO::WaitWritable
-      - PP::ObjectMixin
-      - Kernel
-  - name: IO::EAGAINWaitReadable
-    parent: Errno::EAGAIN
-    children:
-    ancestry:
-      - IO::EAGAINWaitReadable
-      - IO::WaitReadable
-      - Errno::EAGAIN
-      - SystemCallError
-      - StandardError
-      - Exception
-      - Object
-      - PP::ObjectMixin
-      - Kernel
-      - BasicObject
-    direct_ancestry:
-      - IO::EAGAINWaitReadable
-      - Errno::EAGAIN
-      - SystemCallError
-      - StandardError
-      - Exception
-      - Object
-      - BasicObject
-    collateral_ancestry:
-      - IO::WaitReadable
-      - PP::ObjectMixin
-      - Kernel
-  - name: IO::EAGAINWaitWritable
-    parent: Errno::EAGAIN
-    children:
-    ancestry:
-      - IO::EAGAINWaitWritable
-      - IO::WaitWritable
-      - Errno::EAGAIN
-      - SystemCallError
-      - StandardError
-      - Exception
-      - Object
-      - PP::ObjectMixin
-      - Kernel
-      - BasicObject
-    direct_ancestry:
-      - IO::EAGAINWaitWritable
-      - Errno::EAGAIN
-      - SystemCallError
-      - StandardError
-      - Exception
-      - Object
-      - BasicObject
-    collateral_ancestry:
-      - IO::WaitWritable
-      - PP::ObjectMixin
-      - Kernel
-  - name: IO::EINPROGRESSWaitReadable
-    parent: Errno::EINPROGRESS
-    children:
-    ancestry:
-      - IO::EINPROGRESSWaitReadable
-      - IO::WaitReadable
-      - Errno::EINPROGRESS
-      - SystemCallError
-      - StandardError
-      - Exception
-      - Object
-      - PP::ObjectMixin
-      - Kernel
-      - BasicObject
-    direct_ancestry:
-      - IO::EINPROGRESSWaitReadable
-      - Errno::EINPROGRESS
-      - SystemCallError
-      - StandardError
-      - Exception
-      - Object
-      - BasicObject
-    collateral_ancestry:
-      - IO::WaitReadable
-      - PP::ObjectMixin
-      - Kernel
-  - name: IO::EINPROGRESSWaitWritable
-    parent: Errno::EINPROGRESS
-    children:
-    ancestry:
-      - IO::EINPROGRESSWaitWritable
-      - IO::WaitWritable
-      - Errno::EINPROGRESS
-      - SystemCallError
-      - StandardError
-      - Exception
-      - Object
-      - PP::ObjectMixin
-      - Kernel
-      - BasicObject
-    direct_ancestry:
-      - IO::EINPROGRESSWaitWritable
-      - Errno::EINPROGRESS
-      - SystemCallError
-      - StandardError
-      - Exception
-      - Object
-      - BasicObject
-    collateral_ancestry:
-      - IO::WaitWritable
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
   - name: RubyVM
@@ -1166,6 +1118,7 @@ klasses:
     ancestry:
       - RubyVM
       - Object
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
       - BasicObject
@@ -1174,6 +1127,7 @@ klasses:
       - Object
       - BasicObject
     collateral_ancestry:
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
   - name: RubyVM::InstructionSequence
@@ -1182,6 +1136,7 @@ klasses:
     ancestry:
       - RubyVM::InstructionSequence
       - Object
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
       - BasicObject
@@ -1190,6 +1145,7 @@ klasses:
       - Object
       - BasicObject
     collateral_ancestry:
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
   - name: Math::DomainError
@@ -1200,6 +1156,7 @@ klasses:
       - StandardError
       - Exception
       - Object
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
       - BasicObject
@@ -1210,6 +1167,7 @@ klasses:
       - Object
       - BasicObject
     collateral_ancestry:
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
   - name: ZeroDivisionError
@@ -1220,6 +1178,7 @@ klasses:
       - StandardError
       - Exception
       - Object
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
       - BasicObject
@@ -1230,6 +1189,7 @@ klasses:
       - Object
       - BasicObject
     collateral_ancestry:
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
   - name: FloatDomainError
@@ -1241,6 +1201,7 @@ klasses:
       - StandardError
       - Exception
       - Object
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
       - BasicObject
@@ -1252,6 +1213,7 @@ klasses:
       - Object
       - BasicObject
     collateral_ancestry:
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
   - name: Integer
@@ -1264,6 +1226,7 @@ klasses:
       - Numeric
       - Comparable
       - Object
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
       - BasicObject
@@ -1274,6 +1237,7 @@ klasses:
       - BasicObject
     collateral_ancestry:
       - Comparable
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
   - name: Fixnum
@@ -1281,10 +1245,12 @@ klasses:
     children:
     ancestry:
       - Fixnum
+      - JSON::Ext::Generator::GeneratorMethods::Fixnum
       - Integer
       - Numeric
       - Comparable
       - Object
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
       - BasicObject
@@ -1295,7 +1261,9 @@ klasses:
       - Object
       - BasicObject
     collateral_ancestry:
+      - JSON::Ext::Generator::GeneratorMethods::Fixnum
       - Comparable
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
   - name: Data
@@ -1305,6 +1273,7 @@ klasses:
     ancestry:
       - Data
       - Object
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
       - BasicObject
@@ -1313,6 +1282,7 @@ klasses:
       - Object
       - BasicObject
     collateral_ancestry:
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
   - name: TrueClass
@@ -1320,7 +1290,9 @@ klasses:
     children:
     ancestry:
       - TrueClass
+      - JSON::Ext::Generator::GeneratorMethods::TrueClass
       - Object
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
       - BasicObject
@@ -1329,6 +1301,8 @@ klasses:
       - Object
       - BasicObject
     collateral_ancestry:
+      - JSON::Ext::Generator::GeneratorMethods::TrueClass
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
   - name: FalseClass
@@ -1336,7 +1310,9 @@ klasses:
     children:
     ancestry:
       - FalseClass
+      - JSON::Ext::Generator::GeneratorMethods::FalseClass
       - Object
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
       - BasicObject
@@ -1345,6 +1321,8 @@ klasses:
       - Object
       - BasicObject
     collateral_ancestry:
+      - JSON::Ext::Generator::GeneratorMethods::FalseClass
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
   - name: Thread
@@ -1353,6 +1331,7 @@ klasses:
     ancestry:
       - Thread
       - Object
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
       - BasicObject
@@ -1361,6 +1340,7 @@ klasses:
       - Object
       - BasicObject
     collateral_ancestry:
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
   - name: Proc
@@ -1371,6 +1351,7 @@ klasses:
       - MethodSource::MethodExtensions
       - MethodSource::SourceLocation::ProcExtensions
       - Object
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
       - BasicObject
@@ -1381,6 +1362,7 @@ klasses:
     collateral_ancestry:
       - MethodSource::MethodExtensions
       - MethodSource::SourceLocation::ProcExtensions
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
   - name: LocalJumpError
@@ -1391,6 +1373,7 @@ klasses:
       - StandardError
       - Exception
       - Object
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
       - BasicObject
@@ -1401,6 +1384,7 @@ klasses:
       - Object
       - BasicObject
     collateral_ancestry:
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
   - name: SystemStackError
@@ -1410,6 +1394,7 @@ klasses:
       - SystemStackError
       - Exception
       - Object
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
       - BasicObject
@@ -1419,6 +1404,7 @@ klasses:
       - Object
       - BasicObject
     collateral_ancestry:
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
   - name: Method
@@ -1429,6 +1415,7 @@ klasses:
       - MethodSource::MethodExtensions
       - MethodSource::SourceLocation::MethodExtensions
       - Object
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
       - BasicObject
@@ -1439,6 +1426,7 @@ klasses:
     collateral_ancestry:
       - MethodSource::MethodExtensions
       - MethodSource::SourceLocation::MethodExtensions
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
   - name: UnboundMethod
@@ -1449,6 +1437,7 @@ klasses:
       - MethodSource::MethodExtensions
       - MethodSource::SourceLocation::UnboundMethodExtensions
       - Object
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
       - BasicObject
@@ -1459,6 +1448,7 @@ klasses:
     collateral_ancestry:
       - MethodSource::MethodExtensions
       - MethodSource::SourceLocation::UnboundMethodExtensions
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
   - name: Binding
@@ -1468,6 +1458,7 @@ klasses:
       - Binding
       - BindingOfCaller::BindingExtensions
       - Object
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
       - BasicObject
@@ -1477,6 +1468,7 @@ klasses:
       - BasicObject
     collateral_ancestry:
       - BindingOfCaller::BindingExtensions
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
   - name: Process::Status
@@ -1485,6 +1477,7 @@ klasses:
     ancestry:
       - Process::Status
       - Object
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
       - BasicObject
@@ -1493,6 +1486,7 @@ klasses:
       - Object
       - BasicObject
     collateral_ancestry:
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
   - name: Struct
@@ -1502,6 +1496,7 @@ klasses:
       - Struct
       - Enumerable
       - Object
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
       - BasicObject
@@ -1511,6 +1506,7 @@ klasses:
       - BasicObject
     collateral_ancestry:
       - Enumerable
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
   - name: Random
@@ -1519,6 +1515,7 @@ klasses:
     ancestry:
       - Random
       - Object
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
       - BasicObject
@@ -1527,6 +1524,7 @@ klasses:
       - Object
       - BasicObject
     collateral_ancestry:
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
   - name: Range
@@ -1536,6 +1534,7 @@ klasses:
       - Range
       - Enumerable
       - Object
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
       - BasicObject
@@ -1545,6 +1544,7 @@ klasses:
       - BasicObject
     collateral_ancestry:
       - Enumerable
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
   - name: Rational
@@ -1555,6 +1555,7 @@ klasses:
       - Numeric
       - Comparable
       - Object
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
       - BasicObject
@@ -1565,6 +1566,7 @@ klasses:
       - BasicObject
     collateral_ancestry:
       - Comparable
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
   - name: RegexpError
@@ -1575,6 +1577,7 @@ klasses:
       - StandardError
       - Exception
       - Object
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
       - BasicObject
@@ -1585,6 +1588,7 @@ klasses:
       - Object
       - BasicObject
     collateral_ancestry:
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
   - name: Regexp
@@ -1593,6 +1597,7 @@ klasses:
     ancestry:
       - Regexp
       - Object
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
       - BasicObject
@@ -1601,6 +1606,7 @@ klasses:
       - Object
       - BasicObject
     collateral_ancestry:
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
   - name: MatchData
@@ -1609,6 +1615,7 @@ klasses:
     ancestry:
       - MatchData
       - Object
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
       - BasicObject
@@ -1617,6 +1624,7 @@ klasses:
       - Object
       - BasicObject
     collateral_ancestry:
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
   - name: Symbol
@@ -1626,6 +1634,7 @@ klasses:
       - Symbol
       - Comparable
       - Object
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
       - BasicObject
@@ -1635,6 +1644,7 @@ klasses:
       - BasicObject
     collateral_ancestry:
       - Comparable
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
   - name: ThreadGroup
@@ -1643,6 +1653,7 @@ klasses:
     ancestry:
       - ThreadGroup
       - Object
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
       - BasicObject
@@ -1651,6 +1662,7 @@ klasses:
       - Object
       - BasicObject
     collateral_ancestry:
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
   - name: Mutex
@@ -1659,6 +1671,7 @@ klasses:
     ancestry:
       - Mutex
       - Object
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
       - BasicObject
@@ -1667,6 +1680,7 @@ klasses:
       - Object
       - BasicObject
     collateral_ancestry:
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
   - name: ThreadError
@@ -1677,6 +1691,7 @@ klasses:
       - StandardError
       - Exception
       - Object
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
       - BasicObject
@@ -1687,6 +1702,7 @@ klasses:
       - Object
       - BasicObject
     collateral_ancestry:
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
   - name: Time
@@ -1696,6 +1712,7 @@ klasses:
       - Time
       - Comparable
       - Object
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
       - BasicObject
@@ -1705,6 +1722,7 @@ klasses:
       - BasicObject
     collateral_ancestry:
       - Comparable
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
   - name: Encoding::UndefinedConversionError
@@ -1716,6 +1734,7 @@ klasses:
       - StandardError
       - Exception
       - Object
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
       - BasicObject
@@ -1727,6 +1746,7 @@ klasses:
       - Object
       - BasicObject
     collateral_ancestry:
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
   - name: Encoding::InvalidByteSequenceError
@@ -1738,6 +1758,7 @@ klasses:
       - StandardError
       - Exception
       - Object
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
       - BasicObject
@@ -1749,6 +1770,7 @@ klasses:
       - Object
       - BasicObject
     collateral_ancestry:
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
   - name: Encoding::ConverterNotFoundError
@@ -1760,6 +1782,7 @@ klasses:
       - StandardError
       - Exception
       - Object
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
       - BasicObject
@@ -1771,6 +1794,7 @@ klasses:
       - Object
       - BasicObject
     collateral_ancestry:
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
   - name: Encoding::Converter
@@ -1780,6 +1804,7 @@ klasses:
       - Encoding::Converter
       - Data
       - Object
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
       - BasicObject
@@ -1789,6 +1814,7 @@ klasses:
       - Object
       - BasicObject
     collateral_ancestry:
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
   - name: RubyVM::Env
@@ -1797,6 +1823,7 @@ klasses:
     ancestry:
       - RubyVM::Env
       - Object
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
       - BasicObject
@@ -1805,6 +1832,7 @@ klasses:
       - Object
       - BasicObject
     collateral_ancestry:
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
   - name: Thread::Backtrace
@@ -1813,6 +1841,7 @@ klasses:
     ancestry:
       - Thread::Backtrace
       - Object
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
       - BasicObject
@@ -1821,6 +1850,7 @@ klasses:
       - Object
       - BasicObject
     collateral_ancestry:
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
   - name: Thread::Backtrace::Location
@@ -1829,6 +1859,7 @@ klasses:
     ancestry:
       - Thread::Backtrace::Location
       - Object
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
       - BasicObject
@@ -1837,6 +1868,7 @@ klasses:
       - Object
       - BasicObject
     collateral_ancestry:
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
   - name: TracePoint
@@ -1845,6 +1877,7 @@ klasses:
     ancestry:
       - TracePoint
       - Object
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
       - BasicObject
@@ -1853,5 +1886,6 @@ klasses:
       - Object
       - BasicObject
     collateral_ancestry:
+      - JSON::Ext::Generator::GeneratorMethods::Object
       - PP::ObjectMixin
       - Kernel
