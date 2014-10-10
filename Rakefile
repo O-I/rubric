@@ -1,5 +1,6 @@
 require 'pry'
 require 'yaml'
+require 'json'
 require 'nokogiri'
 require 'open-uri'
 
@@ -71,6 +72,31 @@ namespace :rubric do
       klasses.each do |klass|
         file.puts "#{klass},#{color_sample.pop}"
       end
+    end
+  end
+
+  desc 'Generate the dependency matrix'
+  task :matrix do
+
+    yaml = YAML::load_file('data/classify.yml')
+    klass_list = yaml['klasses'].map { |klass| klass['name'] }
+    dim = klass_list.size
+
+    table = Array.new(dim) { Array.new(dim, 0) }
+
+    klass_list.each.with_index do |klass, index|
+      parent = yaml['klasses'][index]['parent']
+      children = yaml['klasses'][index]['children'] || []
+      table[index][klass_list.index(parent)] += 5 rescue next
+      children.each do |child|
+        table[index][klass_list.index(child)] += 1
+      end
+    end
+
+    target = 'data/matrix.json'
+
+    File.open(target, 'w') do |file|
+      file.puts table.to_json
     end
   end
 end
