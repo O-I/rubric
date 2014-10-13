@@ -100,4 +100,29 @@ namespace :rubric do
       file.puts table.to_json
     end
   end
+
+  desc 'Generate hierarchy.json for sunburst'
+  task :descent do
+
+    yaml = YAML::load_file('data/classify.yml')
+
+    nodes = yaml['klasses'].map do |klass|
+      {
+        name:    klass['name'],
+        parent:  klass['parent'],
+        size:   (klass['children'].size + 1 rescue 1)
+      }
+    end
+
+    def to_tree(nodes, parent = nil)
+      rest, root = nodes.partition { |node| node[:parent] == parent }
+      rest.map { |node| node.merge(children: to_tree(root, node[:name])) }
+    end
+
+    target = 'data/hierarchy.json'
+
+    File.open(target, 'w') do |file|
+      file.puts JSON.pretty_generate(to_tree(nodes).pop)
+    end
+  end
 end
