@@ -1,0 +1,679 @@
+{
+  "name": "BasicObject",
+  "parent": null,
+  "size": 2,
+  "children": [
+    {
+      "name": "Object",
+      "parent": "BasicObject",
+      "size": 41,
+      "children": [
+        {
+          "name": "Array",
+          "parent": "Object",
+          "size": 1,
+          "children": [
+
+          ]
+        },
+        {
+          "name": "Module",
+          "parent": "Object",
+          "size": 2,
+          "children": [
+            {
+              "name": "Class",
+              "parent": "Module",
+              "size": 1,
+              "children": [
+
+              ]
+            }
+          ]
+        },
+        {
+          "name": "NilClass",
+          "parent": "Object",
+          "size": 1,
+          "children": [
+
+          ]
+        },
+        {
+          "name": "Numeric",
+          "parent": "Object",
+          "size": 5,
+          "children": [
+            {
+              "name": "Complex",
+              "parent": "Numeric",
+              "size": 1,
+              "children": [
+
+              ]
+            },
+            {
+              "name": "Float",
+              "parent": "Numeric",
+              "size": 1,
+              "children": [
+
+              ]
+            },
+            {
+              "name": "Integer",
+              "parent": "Numeric",
+              "size": 3,
+              "children": [
+                {
+                  "name": "Bignum",
+                  "parent": "Integer",
+                  "size": 1,
+                  "children": [
+
+                  ]
+                },
+                {
+                  "name": "Fixnum",
+                  "parent": "Integer",
+                  "size": 1,
+                  "children": [
+
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Rational",
+              "parent": "Numeric",
+              "size": 1,
+              "children": [
+
+              ]
+            }
+          ]
+        },
+        {
+          "name": "String",
+          "parent": "Object",
+          "size": 1,
+          "children": [
+
+          ]
+        },
+        {
+          "name": "Fiber",
+          "parent": "Object",
+          "size": 1,
+          "children": [
+
+          ]
+        },
+        {
+          "name": "Dir",
+          "parent": "Object",
+          "size": 1,
+          "children": [
+
+          ]
+        },
+        {
+          "name": "Encoding",
+          "parent": "Object",
+          "size": 1,
+          "children": [
+
+          ]
+        },
+        {
+          "name": "Enumerator",
+          "parent": "Object",
+          "size": 2,
+          "children": [
+            {
+              "name": "Enumerator::Lazy",
+              "parent": "Enumerator",
+              "size": 1,
+              "children": [
+
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Enumerator::Generator",
+          "parent": "Object",
+          "size": 1,
+          "children": [
+
+          ]
+        },
+        {
+          "name": "Enumerator::Yielder",
+          "parent": "Object",
+          "size": 1,
+          "children": [
+
+          ]
+        },
+        {
+          "name": "Exception",
+          "parent": "Object",
+          "size": 8,
+          "children": [
+            {
+              "name": "SystemExit",
+              "parent": "Exception",
+              "size": 1,
+              "children": [
+
+              ]
+            },
+            {
+              "name": "SignalException",
+              "parent": "Exception",
+              "size": 2,
+              "children": [
+                {
+                  "name": "Interrupt",
+                  "parent": "SignalException",
+                  "size": 1,
+                  "children": [
+
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "StandardError",
+              "parent": "Exception",
+              "size": 16,
+              "children": [
+                {
+                  "name": "FiberError",
+                  "parent": "StandardError",
+                  "size": 1,
+                  "children": [
+
+                  ]
+                },
+                {
+                  "name": "TypeError",
+                  "parent": "StandardError",
+                  "size": 1,
+                  "children": [
+
+                  ]
+                },
+                {
+                  "name": "ArgumentError",
+                  "parent": "StandardError",
+                  "size": 1,
+                  "children": [
+
+                  ]
+                },
+                {
+                  "name": "IndexError",
+                  "parent": "StandardError",
+                  "size": 3,
+                  "children": [
+                    {
+                      "name": "StopIteration",
+                      "parent": "IndexError",
+                      "size": 1,
+                      "children": [
+
+                      ]
+                    },
+                    {
+                      "name": "KeyError",
+                      "parent": "IndexError",
+                      "size": 1,
+                      "children": [
+
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "RangeError",
+                  "parent": "StandardError",
+                  "size": 2,
+                  "children": [
+                    {
+                      "name": "FloatDomainError",
+                      "parent": "RangeError",
+                      "size": 1,
+                      "children": [
+
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "NameError",
+                  "parent": "StandardError",
+                  "size": 2,
+                  "children": [
+                    {
+                      "name": "NoMethodError",
+                      "parent": "NameError",
+                      "size": 1,
+                      "children": [
+
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "RuntimeError",
+                  "parent": "StandardError",
+                  "size": 1,
+                  "children": [
+
+                  ]
+                },
+                {
+                  "name": "EncodingError",
+                  "parent": "StandardError",
+                  "size": 5,
+                  "children": [
+                    {
+                      "name": "Encoding::CompatibilityError",
+                      "parent": "EncodingError",
+                      "size": 1,
+                      "children": [
+
+                      ]
+                    },
+                    {
+                      "name": "Encoding::UndefinedConversionError",
+                      "parent": "EncodingError",
+                      "size": 1,
+                      "children": [
+
+                      ]
+                    },
+                    {
+                      "name": "Encoding::InvalidByteSequenceError",
+                      "parent": "EncodingError",
+                      "size": 1,
+                      "children": [
+
+                      ]
+                    },
+                    {
+                      "name": "Encoding::ConverterNotFoundError",
+                      "parent": "EncodingError",
+                      "size": 1,
+                      "children": [
+
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "SystemCallError",
+                  "parent": "StandardError",
+                  "size": 1,
+                  "children": [
+
+                  ]
+                },
+                {
+                  "name": "IOError",
+                  "parent": "StandardError",
+                  "size": 2,
+                  "children": [
+                    {
+                      "name": "EOFError",
+                      "parent": "IOError",
+                      "size": 1,
+                      "children": [
+
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Math::DomainError",
+                  "parent": "StandardError",
+                  "size": 1,
+                  "children": [
+
+                  ]
+                },
+                {
+                  "name": "ZeroDivisionError",
+                  "parent": "StandardError",
+                  "size": 1,
+                  "children": [
+
+                  ]
+                },
+                {
+                  "name": "LocalJumpError",
+                  "parent": "StandardError",
+                  "size": 1,
+                  "children": [
+
+                  ]
+                },
+                {
+                  "name": "RegexpError",
+                  "parent": "StandardError",
+                  "size": 1,
+                  "children": [
+
+                  ]
+                },
+                {
+                  "name": "ThreadError",
+                  "parent": "StandardError",
+                  "size": 1,
+                  "children": [
+
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "ScriptError",
+              "parent": "Exception",
+              "size": 4,
+              "children": [
+                {
+                  "name": "SyntaxError",
+                  "parent": "ScriptError",
+                  "size": 1,
+                  "children": [
+
+                  ]
+                },
+                {
+                  "name": "LoadError",
+                  "parent": "ScriptError",
+                  "size": 1,
+                  "children": [
+
+                  ]
+                },
+                {
+                  "name": "NotImplementedError",
+                  "parent": "ScriptError",
+                  "size": 1,
+                  "children": [
+
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "SecurityError",
+              "parent": "Exception",
+              "size": 1,
+              "children": [
+
+              ]
+            },
+            {
+              "name": "NoMemoryError",
+              "parent": "Exception",
+              "size": 1,
+              "children": [
+
+              ]
+            },
+            {
+              "name": "SystemStackError",
+              "parent": "Exception",
+              "size": 1,
+              "children": [
+
+              ]
+            }
+          ]
+        },
+        {
+          "name": "File::Stat",
+          "parent": "Object",
+          "size": 1,
+          "children": [
+
+          ]
+        },
+        {
+          "name": "IO",
+          "parent": "Object",
+          "size": 2,
+          "children": [
+            {
+              "name": "File",
+              "parent": "IO",
+              "size": 1,
+              "children": [
+
+              ]
+            }
+          ]
+        },
+        {
+          "name": "ObjectSpace::WeakMap",
+          "parent": "Object",
+          "size": 1,
+          "children": [
+
+          ]
+        },
+        {
+          "name": "Hash",
+          "parent": "Object",
+          "size": 1,
+          "children": [
+
+          ]
+        },
+        {
+          "name": "RubyVM",
+          "parent": "Object",
+          "size": 1,
+          "children": [
+
+          ]
+        },
+        {
+          "name": "RubyVM::InstructionSequence",
+          "parent": "Object",
+          "size": 1,
+          "children": [
+
+          ]
+        },
+        {
+          "name": "Data",
+          "parent": "Object",
+          "size": 2,
+          "children": [
+            {
+              "name": "Encoding::Converter",
+              "parent": "Data",
+              "size": 1,
+              "children": [
+
+              ]
+            }
+          ]
+        },
+        {
+          "name": "TrueClass",
+          "parent": "Object",
+          "size": 1,
+          "children": [
+
+          ]
+        },
+        {
+          "name": "FalseClass",
+          "parent": "Object",
+          "size": 1,
+          "children": [
+
+          ]
+        },
+        {
+          "name": "Thread",
+          "parent": "Object",
+          "size": 1,
+          "children": [
+
+          ]
+        },
+        {
+          "name": "Proc",
+          "parent": "Object",
+          "size": 1,
+          "children": [
+
+          ]
+        },
+        {
+          "name": "Method",
+          "parent": "Object",
+          "size": 1,
+          "children": [
+
+          ]
+        },
+        {
+          "name": "UnboundMethod",
+          "parent": "Object",
+          "size": 1,
+          "children": [
+
+          ]
+        },
+        {
+          "name": "Binding",
+          "parent": "Object",
+          "size": 1,
+          "children": [
+
+          ]
+        },
+        {
+          "name": "Process::Status",
+          "parent": "Object",
+          "size": 1,
+          "children": [
+
+          ]
+        },
+        {
+          "name": "Struct",
+          "parent": "Object",
+          "size": 1,
+          "children": [
+
+          ]
+        },
+        {
+          "name": "Random",
+          "parent": "Object",
+          "size": 1,
+          "children": [
+
+          ]
+        },
+        {
+          "name": "Range",
+          "parent": "Object",
+          "size": 1,
+          "children": [
+
+          ]
+        },
+        {
+          "name": "Regexp",
+          "parent": "Object",
+          "size": 1,
+          "children": [
+
+          ]
+        },
+        {
+          "name": "MatchData",
+          "parent": "Object",
+          "size": 1,
+          "children": [
+
+          ]
+        },
+        {
+          "name": "Symbol",
+          "parent": "Object",
+          "size": 1,
+          "children": [
+
+          ]
+        },
+        {
+          "name": "ThreadGroup",
+          "parent": "Object",
+          "size": 1,
+          "children": [
+
+          ]
+        },
+        {
+          "name": "Mutex",
+          "parent": "Object",
+          "size": 1,
+          "children": [
+
+          ]
+        },
+        {
+          "name": "Time",
+          "parent": "Object",
+          "size": 1,
+          "children": [
+
+          ]
+        },
+        {
+          "name": "RubyVM::Env",
+          "parent": "Object",
+          "size": 1,
+          "children": [
+
+          ]
+        },
+        {
+          "name": "Thread::Backtrace",
+          "parent": "Object",
+          "size": 1,
+          "children": [
+
+          ]
+        },
+        {
+          "name": "Thread::Backtrace::Location",
+          "parent": "Object",
+          "size": 1,
+          "children": [
+
+          ]
+        },
+        {
+          "name": "TracePoint",
+          "parent": "Object",
+          "size": 1,
+          "children": [
+
+          ]
+        }
+      ]
+    }
+  ]
+}
