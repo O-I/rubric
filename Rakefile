@@ -125,4 +125,24 @@ namespace :rubric do
       file.puts JSON.pretty_generate(to_tree(nodes).pop)
     end
   end
+
+  desc 'Generate ancestry.json for edge bundling'
+  task :ancestry do
+
+    yaml = YAML::load_file('data/classify.yml')
+
+    nodes = yaml['klasses'].map do |klass|
+      {
+        name:    klass['name'],
+        direct_ancestry:  klass['direct_ancestry'],
+        size:   (klass['children'].size + 1 rescue 1)
+      }
+    end
+
+    target = 'data/ancestry.json'
+
+    File.open(target, 'w') do |file|
+      file.puts JSON.pretty_generate(nodes)
+    end
+  end
 end
