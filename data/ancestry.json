@@ -1,0 +1,866 @@
+[
+  {
+    "name": "Array",
+    "direct_ancestry": [
+      "Array",
+      "Object",
+      "BasicObject"
+    ],
+    "size": 1
+  },
+  {
+    "name": "Bignum",
+    "direct_ancestry": [
+      "Bignum",
+      "Integer",
+      "Numeric",
+      "Object",
+      "BasicObject"
+    ],
+    "size": 1
+  },
+  {
+    "name": "BasicObject",
+    "direct_ancestry": [
+      "BasicObject"
+    ],
+    "size": 2
+  },
+  {
+    "name": "Object",
+    "direct_ancestry": [
+      "Object",
+      "BasicObject"
+    ],
+    "size": 41
+  },
+  {
+    "name": "Module",
+    "direct_ancestry": [
+      "Module",
+      "Object",
+      "BasicObject"
+    ],
+    "size": 2
+  },
+  {
+    "name": "Class",
+    "direct_ancestry": [
+      "Class",
+      "Module",
+      "Object",
+      "BasicObject"
+    ],
+    "size": 1
+  },
+  {
+    "name": "Complex",
+    "direct_ancestry": [
+      "Complex",
+      "Numeric",
+      "Object",
+      "BasicObject"
+    ],
+    "size": 1
+  },
+  {
+    "name": "NilClass",
+    "direct_ancestry": [
+      "NilClass",
+      "Object",
+      "BasicObject"
+    ],
+    "size": 1
+  },
+  {
+    "name": "Numeric",
+    "direct_ancestry": [
+      "Numeric",
+      "Object",
+      "BasicObject"
+    ],
+    "size": 5
+  },
+  {
+    "name": "String",
+    "direct_ancestry": [
+      "String",
+      "Object",
+      "BasicObject"
+    ],
+    "size": 1
+  },
+  {
+    "name": "Float",
+    "direct_ancestry": [
+      "Float",
+      "Numeric",
+      "Object",
+      "BasicObject"
+    ],
+    "size": 1
+  },
+  {
+    "name": "Fiber",
+    "direct_ancestry": [
+      "Fiber",
+      "Object",
+      "BasicObject"
+    ],
+    "size": 1
+  },
+  {
+    "name": "FiberError",
+    "direct_ancestry": [
+      "FiberError",
+      "StandardError",
+      "Exception",
+      "Object",
+      "BasicObject"
+    ],
+    "size": 1
+  },
+  {
+    "name": "Dir",
+    "direct_ancestry": [
+      "Dir",
+      "Object",
+      "BasicObject"
+    ],
+    "size": 1
+  },
+  {
+    "name": "File",
+    "direct_ancestry": [
+      "File",
+      "IO",
+      "Object",
+      "BasicObject"
+    ],
+    "size": 1
+  },
+  {
+    "name": "Encoding",
+    "direct_ancestry": [
+      "Encoding",
+      "Object",
+      "BasicObject"
+    ],
+    "size": 1
+  },
+  {
+    "name": "Enumerator",
+    "direct_ancestry": [
+      "Enumerator",
+      "Object",
+      "BasicObject"
+    ],
+    "size": 2
+  },
+  {
+    "name": "StopIteration",
+    "direct_ancestry": [
+      "StopIteration",
+      "IndexError",
+      "StandardError",
+      "Exception",
+      "Object",
+      "BasicObject"
+    ],
+    "size": 1
+  },
+  {
+    "name": "Enumerator::Lazy",
+    "direct_ancestry": [
+      "Enumerator::Lazy",
+      "Enumerator",
+      "Object",
+      "BasicObject"
+    ],
+    "size": 1
+  },
+  {
+    "name": "Enumerator::Generator",
+    "direct_ancestry": [
+      "Enumerator::Generator",
+      "Object",
+      "BasicObject"
+    ],
+    "size": 1
+  },
+  {
+    "name": "Enumerator::Yielder",
+    "direct_ancestry": [
+      "Enumerator::Yielder",
+      "Object",
+      "BasicObject"
+    ],
+    "size": 1
+  },
+  {
+    "name": "Exception",
+    "direct_ancestry": [
+      "Exception",
+      "Object",
+      "BasicObject"
+    ],
+    "size": 8
+  },
+  {
+    "name": "SystemExit",
+    "direct_ancestry": [
+      "SystemExit",
+      "Exception",
+      "Object",
+      "BasicObject"
+    ],
+    "size": 1
+  },
+  {
+    "name": "SignalException",
+    "direct_ancestry": [
+      "SignalException",
+      "Exception",
+      "Object",
+      "BasicObject"
+    ],
+    "size": 2
+  },
+  {
+    "name": "Interrupt",
+    "direct_ancestry": [
+      "Interrupt",
+      "SignalException",
+      "Exception",
+      "Object",
+      "BasicObject"
+    ],
+    "size": 1
+  },
+  {
+    "name": "StandardError",
+    "direct_ancestry": [
+      "StandardError",
+      "Exception",
+      "Object",
+      "BasicObject"
+    ],
+    "size": 16
+  },
+  {
+    "name": "TypeError",
+    "direct_ancestry": [
+      "TypeError",
+      "StandardError",
+      "Exception",
+      "Object",
+      "BasicObject"
+    ],
+    "size": 1
+  },
+  {
+    "name": "ArgumentError",
+    "direct_ancestry": [
+      "ArgumentError",
+      "StandardError",
+      "Exception",
+      "Object",
+      "BasicObject"
+    ],
+    "size": 1
+  },
+  {
+    "name": "IndexError",
+    "direct_ancestry": [
+      "IndexError",
+      "StandardError",
+      "Exception",
+      "Object",
+      "BasicObject"
+    ],
+    "size": 3
+  },
+  {
+    "name": "KeyError",
+    "direct_ancestry": [
+      "KeyError",
+      "IndexError",
+      "StandardError",
+      "Exception",
+      "Object",
+      "BasicObject"
+    ],
+    "size": 1
+  },
+  {
+    "name": "RangeError",
+    "direct_ancestry": [
+      "RangeError",
+      "StandardError",
+      "Exception",
+      "Object",
+      "BasicObject"
+    ],
+    "size": 2
+  },
+  {
+    "name": "ScriptError",
+    "direct_ancestry": [
+      "ScriptError",
+      "Exception",
+      "Object",
+      "BasicObject"
+    ],
+    "size": 4
+  },
+  {
+    "name": "SyntaxError",
+    "direct_ancestry": [
+      "SyntaxError",
+      "ScriptError",
+      "Exception",
+      "Object",
+      "BasicObject"
+    ],
+    "size": 1
+  },
+  {
+    "name": "LoadError",
+    "direct_ancestry": [
+      "LoadError",
+      "ScriptError",
+      "Exception",
+      "Object",
+      "BasicObject"
+    ],
+    "size": 1
+  },
+  {
+    "name": "NotImplementedError",
+    "direct_ancestry": [
+      "NotImplementedError",
+      "ScriptError",
+      "Exception",
+      "Object",
+      "BasicObject"
+    ],
+    "size": 1
+  },
+  {
+    "name": "NameError",
+    "direct_ancestry": [
+      "NameError",
+      "StandardError",
+      "Exception",
+      "Object",
+      "BasicObject"
+    ],
+    "size": 2
+  },
+  {
+    "name": "NoMethodError",
+    "direct_ancestry": [
+      "NoMethodError",
+      "NameError",
+      "StandardError",
+      "Exception",
+      "Object",
+      "BasicObject"
+    ],
+    "size": 1
+  },
+  {
+    "name": "RuntimeError",
+    "direct_ancestry": [
+      "RuntimeError",
+      "StandardError",
+      "Exception",
+      "Object",
+      "BasicObject"
+    ],
+    "size": 1
+  },
+  {
+    "name": "SecurityError",
+    "direct_ancestry": [
+      "SecurityError",
+      "Exception",
+      "Object",
+      "BasicObject"
+    ],
+    "size": 1
+  },
+  {
+    "name": "NoMemoryError",
+    "direct_ancestry": [
+      "NoMemoryError",
+      "Exception",
+      "Object",
+      "BasicObject"
+    ],
+    "size": 1
+  },
+  {
+    "name": "EncodingError",
+    "direct_ancestry": [
+      "EncodingError",
+      "StandardError",
+      "Exception",
+      "Object",
+      "BasicObject"
+    ],
+    "size": 5
+  },
+  {
+    "name": "SystemCallError",
+    "direct_ancestry": [
+      "SystemCallError",
+      "StandardError",
+      "Exception",
+      "Object",
+      "BasicObject"
+    ],
+    "size": 1
+  },
+  {
+    "name": "Encoding::CompatibilityError",
+    "direct_ancestry": [
+      "Encoding::CompatibilityError",
+      "EncodingError",
+      "StandardError",
+      "Exception",
+      "Object",
+      "BasicObject"
+    ],
+    "size": 1
+  },
+  {
+    "name": "File::Stat",
+    "direct_ancestry": [
+      "File::Stat",
+      "Object",
+      "BasicObject"
+    ],
+    "size": 1
+  },
+  {
+    "name": "IO",
+    "direct_ancestry": [
+      "IO",
+      "Object",
+      "BasicObject"
+    ],
+    "size": 2
+  },
+  {
+    "name": "ObjectSpace::WeakMap",
+    "direct_ancestry": [
+      "ObjectSpace::WeakMap",
+      "Object",
+      "BasicObject"
+    ],
+    "size": 1
+  },
+  {
+    "name": "Hash",
+    "direct_ancestry": [
+      "Hash",
+      "Object",
+      "BasicObject"
+    ],
+    "size": 1
+  },
+  {
+    "name": "IOError",
+    "direct_ancestry": [
+      "IOError",
+      "StandardError",
+      "Exception",
+      "Object",
+      "BasicObject"
+    ],
+    "size": 2
+  },
+  {
+    "name": "EOFError",
+    "direct_ancestry": [
+      "EOFError",
+      "IOError",
+      "StandardError",
+      "Exception",
+      "Object",
+      "BasicObject"
+    ],
+    "size": 1
+  },
+  {
+    "name": "RubyVM",
+    "direct_ancestry": [
+      "RubyVM",
+      "Object",
+      "BasicObject"
+    ],
+    "size": 1
+  },
+  {
+    "name": "RubyVM::InstructionSequence",
+    "direct_ancestry": [
+      "RubyVM::InstructionSequence",
+      "Object",
+      "BasicObject"
+    ],
+    "size": 1
+  },
+  {
+    "name": "Math::DomainError",
+    "direct_ancestry": [
+      "Math::DomainError",
+      "StandardError",
+      "Exception",
+      "Object",
+      "BasicObject"
+    ],
+    "size": 1
+  },
+  {
+    "name": "ZeroDivisionError",
+    "direct_ancestry": [
+      "ZeroDivisionError",
+      "StandardError",
+      "Exception",
+      "Object",
+      "BasicObject"
+    ],
+    "size": 1
+  },
+  {
+    "name": "FloatDomainError",
+    "direct_ancestry": [
+      "FloatDomainError",
+      "RangeError",
+      "StandardError",
+      "Exception",
+      "Object",
+      "BasicObject"
+    ],
+    "size": 1
+  },
+  {
+    "name": "Integer",
+    "direct_ancestry": [
+      "Integer",
+      "Numeric",
+      "Object",
+      "BasicObject"
+    ],
+    "size": 3
+  },
+  {
+    "name": "Fixnum",
+    "direct_ancestry": [
+      "Fixnum",
+      "Integer",
+      "Numeric",
+      "Object",
+      "BasicObject"
+    ],
+    "size": 1
+  },
+  {
+    "name": "Data",
+    "direct_ancestry": [
+      "Data",
+      "Object",
+      "BasicObject"
+    ],
+    "size": 2
+  },
+  {
+    "name": "TrueClass",
+    "direct_ancestry": [
+      "TrueClass",
+      "Object",
+      "BasicObject"
+    ],
+    "size": 1
+  },
+  {
+    "name": "FalseClass",
+    "direct_ancestry": [
+      "FalseClass",
+      "Object",
+      "BasicObject"
+    ],
+    "size": 1
+  },
+  {
+    "name": "Thread",
+    "direct_ancestry": [
+      "Thread",
+      "Object",
+      "BasicObject"
+    ],
+    "size": 1
+  },
+  {
+    "name": "Proc",
+    "direct_ancestry": [
+      "Proc",
+      "Object",
+      "BasicObject"
+    ],
+    "size": 1
+  },
+  {
+    "name": "LocalJumpError",
+    "direct_ancestry": [
+      "LocalJumpError",
+      "StandardError",
+      "Exception",
+      "Object",
+      "BasicObject"
+    ],
+    "size": 1
+  },
+  {
+    "name": "SystemStackError",
+    "direct_ancestry": [
+      "SystemStackError",
+      "Exception",
+      "Object",
+      "BasicObject"
+    ],
+    "size": 1
+  },
+  {
+    "name": "Method",
+    "direct_ancestry": [
+      "Method",
+      "Object",
+      "BasicObject"
+    ],
+    "size": 1
+  },
+  {
+    "name": "UnboundMethod",
+    "direct_ancestry": [
+      "UnboundMethod",
+      "Object",
+      "BasicObject"
+    ],
+    "size": 1
+  },
+  {
+    "name": "Binding",
+    "direct_ancestry": [
+      "Binding",
+      "Object",
+      "BasicObject"
+    ],
+    "size": 1
+  },
+  {
+    "name": "Process::Status",
+    "direct_ancestry": [
+      "Process::Status",
+      "Object",
+      "BasicObject"
+    ],
+    "size": 1
+  },
+  {
+    "name": "Struct",
+    "direct_ancestry": [
+      "Struct",
+      "Object",
+      "BasicObject"
+    ],
+    "size": 1
+  },
+  {
+    "name": "Random",
+    "direct_ancestry": [
+      "Random",
+      "Object",
+      "BasicObject"
+    ],
+    "size": 1
+  },
+  {
+    "name": "Range",
+    "direct_ancestry": [
+      "Range",
+      "Object",
+      "BasicObject"
+    ],
+    "size": 1
+  },
+  {
+    "name": "Rational",
+    "direct_ancestry": [
+      "Rational",
+      "Numeric",
+      "Object",
+      "BasicObject"
+    ],
+    "size": 1
+  },
+  {
+    "name": "RegexpError",
+    "direct_ancestry": [
+      "RegexpError",
+      "StandardError",
+      "Exception",
+      "Object",
+      "BasicObject"
+    ],
+    "size": 1
+  },
+  {
+    "name": "Regexp",
+    "direct_ancestry": [
+      "Regexp",
+      "Object",
+      "BasicObject"
+    ],
+    "size": 1
+  },
+  {
+    "name": "MatchData",
+    "direct_ancestry": [
+      "MatchData",
+      "Object",
+      "BasicObject"
+    ],
+    "size": 1
+  },
+  {
+    "name": "Symbol",
+    "direct_ancestry": [
+      "Symbol",
+      "Object",
+      "BasicObject"
+    ],
+    "size": 1
+  },
+  {
+    "name": "ThreadGroup",
+    "direct_ancestry": [
+      "ThreadGroup",
+      "Object",
+      "BasicObject"
+    ],
+    "size": 1
+  },
+  {
+    "name": "Mutex",
+    "direct_ancestry": [
+      "Mutex",
+      "Object",
+      "BasicObject"
+    ],
+    "size": 1
+  },
+  {
+    "name": "ThreadError",
+    "direct_ancestry": [
+      "ThreadError",
+      "StandardError",
+      "Exception",
+      "Object",
+      "BasicObject"
+    ],
+    "size": 1
+  },
+  {
+    "name": "Time",
+    "direct_ancestry": [
+      "Time",
+      "Object",
+      "BasicObject"
+    ],
+    "size": 1
+  },
+  {
+    "name": "Encoding::UndefinedConversionError",
+    "direct_ancestry": [
+      "Encoding::UndefinedConversionError",
+      "EncodingError",
+      "StandardError",
+      "Exception",
+      "Object",
+      "BasicObject"
+    ],
+    "size": 1
+  },
+  {
+    "name": "Encoding::InvalidByteSequenceError",
+    "direct_ancestry": [
+      "Encoding::InvalidByteSequenceError",
+      "EncodingError",
+      "StandardError",
+      "Exception",
+      "Object",
+      "BasicObject"
+    ],
+    "size": 1
+  },
+  {
+    "name": "Encoding::ConverterNotFoundError",
+    "direct_ancestry": [
+      "Encoding::ConverterNotFoundError",
+      "EncodingError",
+      "StandardError",
+      "Exception",
+      "Object",
+      "BasicObject"
+    ],
+    "size": 1
+  },
+  {
+    "name": "Encoding::Converter",
+    "direct_ancestry": [
+      "Encoding::Converter",
+      "Data",
+      "Object",
+      "BasicObject"
+    ],
+    "size": 1
+  },
+  {
+    "name": "RubyVM::Env",
+    "direct_ancestry": [
+      "RubyVM::Env",
+      "Object",
+      "BasicObject"
+    ],
+    "size": 1
+  },
+  {
+    "name": "Thread::Backtrace",
+    "direct_ancestry": [
+      "Thread::Backtrace",
+      "Object",
+      "BasicObject"
+    ],
+    "size": 1
+  },
+  {
+    "name": "Thread::Backtrace::Location",
+    "direct_ancestry": [
+      "Thread::Backtrace::Location",
+      "Object",
+      "BasicObject"
+    ],
+    "size": 1
+  },
+  {
+    "name": "TracePoint",
+    "direct_ancestry": [
+      "TracePoint",
+      "Object",
+      "BasicObject"
+    ],
+    "size": 1
+  }
+]
