@@ -1,60 +1,71 @@
-var width = 960,
-    height = 500;
+var diameter = 960,
+    radius = diameter / 2,
+    innerRadius = radius - 160;
 
-var fill = d3.scale.ordinal()
-             .range(["#f0f0f0", "#d9d9d9", "#bdbdbd"]);
-
-var stroke = d3.scale.linear()
-               .domain([0, 1e4])
-               .range(["brown", "steelblue"]);
-
-var treemap = d3.layout.treemap()
-    .size([width, height])
-    .value(function(d) { return d.size; });
+var cluster = d3.layout.cluster()
+                .size([360, innerRadius])
+                .sort(null)
+                .value(function(d) { return d.size; });
 
 var bundle = d3.layout.bundle();
 
-var div = d3.select("body").append("div")
-    .style("position", "relative")
-    .style("width", width + "px")
-    .style("height", height + "px");
+var line = d3.svg.line.radial()
+             .interpolate("bundle")
+             .tension(.85)
+             .radius(function(d) { return d.y; })
+             .angle(function(d) { return d.x / 180 * Math.PI; });
 
-var line = d3.svg.line()
-    .interpolate("bundle")
-    .tension(.85)
-    .x(function(d) { return d.x + d.dx / 2; })
-    .y(function(d) { return d.y + d.dy / 2; });
+var svg3 = d3.select("#viz").append("svg")
+            .attr("width", diameter)
+            .attr("height", diameter)
+            .append("g")
+            .attr("transform", "translate(" + radius + "," + radius + ")");
+
+var link = svg3.append("g").selectAll(".link"),
+    node = svg3.append("g").selectAll(".node");
 
 d3.json("data/ancestry.json", function(error, classes) {
-  var nodes = treemap.nodes(klasses.root(classes)),
+  var nodes = cluster.nodes(klasses.root(classes)),
       links = klasses.direct_ancestry(nodes);
 
-  div.selectAll(".cell")
-      .data(nodes)
-    .enter().append("div")
-      .attr("class", "cell")
-      .style("background-color", function(d) { return d.children ? fill(d.key) : null; })
-      .call(cell)
-      .text(function(d) { return d.children ? null : d.key; });
+  link = link.data(bundle(links))
+             .enter().append("path")
+             .each(function(d) { d.source = d[0], d.target = d[d.length - 1]; })
+             .attr("class", "link")
+             .attr("d", line);
 
-  div.append("svg")
-      .attr("width", width)
-      .attr("height", height)
-      .style("position", "absolute")
-    .selectAll(".link")
-      .data(bundle(links))
-    .enter().append("path")
-      .attr("class", "link")
-      .attr("d", line)
-      .style("stroke", function(d) { return stroke(d[0].value); });
+  node = node.data(nodes.filter(function(n) { return !n.children; }))
+             .enter().append("text")
+             .attr("class", "node")
+             .attr("dy", ".31em")
+             .attr("transform", function(d) { return "rotate(" + (d.x - 90) + ")translate(" + (d.y + 8) + ",0)" + (d.x < 180 ? "" : "rotate(180)"); })
+             .style("text-anchor", function(d) { return d.x < 180 ? "start" : "end"; })
+             .text(function(d) { return d.key; })
+             .on("mouseover", mouseovered)
+             .on("mouseout", mouseouted);
 });
 
-function cell() {
-  this.style("left", function(d) { return d.x + "px"; })
-      .style("top", function(d) { return d.y + "px"; })
-      .style("width", function(d) { return d.dx - 1 + "px"; })
-      .style("height", function(d) { return d.dy - 1 + "px"; });
+function mouseovered(d) {
+  node.each(function(n) { n.target = n.source = false; });
+
+  link.classed("link--target", function(l) { if (l.target === d) return l.source.source = true; })
+      .classed("link--source", function(l) { if (l.source === d) return l.target.target = true; })
+      .filter(function(l) { return l.target === d || l.source === d; })
+      .each(function() { this.parentNode.appendChild(this); });
+
+  node.classed("node--target", function(n) { return n.target; })
+      .classed("node--source", function(n) { return n.source; });
 }
+
+function mouseouted(d) {
+  link.classed("link--target", false)
+      .classed("link--source", false);
+
+  node.classed("node--target", false)
+      .classed("node--source", false);
+}
+
+d3.select(self.frameElement).style("height", diameter + "px");
 
 var klasses = {
  
@@ -92,7 +103,7 @@ var klasses = {
       map[d.name] = d;
     });
  
-    // For each import, construct a link from the source to target node.
+    // For each class, construct a link from the source to target node.
     nodes.forEach(function(d) {
       if (d.direct_ancestry) d.direct_ancestry.forEach(function(i) {
         direct_ancestry.push({source: map[d.name], target: map[i]});

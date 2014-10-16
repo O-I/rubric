@@ -1,14 +1,43 @@
-.cell {
-  border: solid 1px white;
-  font: 10px sans-serif;
-  line-height: 12px;
-  overflow: hidden;
-  position: absolute;
-  text-indent: 2px;
+.node {
+  font: 300 11px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  fill: #bbb;
+}
+
+.node:hover {
+  fill: #000;
 }
 
 .link {
-  stroke: #000;
-  stroke-opacity: .5;
+  stroke: steelblue;
+  stroke-opacity: .4;
   fill: none;
+  pointer-events: none;
+}
+
+.node:hover,
+.node--source,
+.node--target {
+  font-weight: 700;
+}
+
+.node--source {
+  fill: #2ca02c;
+}
+
+.node--target {
+  fill: #d62728;
+}
+
+.link--source,
+.link--target {
+  stroke-opacity: 1;
+  stroke-width: 2px;
+}
+
+.link--source {
+  stroke: #d62728;
+}
+
+.link--target {
+  stroke: #2ca02c;
 }
