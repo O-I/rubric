@@ -5,15 +5,28 @@
   <title>Ruby Core Class Inheritance</title>
   <link rel="stylesheet" type="text/css" href="styles/main.css">
   <link rel="stylesheet" type="text/css" href="styles/chord.css">
+  <link rel="stylesheet" type="text/css" href="styles/treemap.css">
+  <link rel="stylesheet" type="text/css" href="styles/bundling.css">
 </head>
 
 <body>
   <h1>Ruby Core Class Inheritance</h1>
-  <h3>visualized as a chord layout</h3>
+  <h3>visualized as a <span id="viz_name">chord layout</span></h3>
+
+  <header>
+    <button id="chord_layout">chord layout</button>
+    <button id="sunburst">sunburst</button>
+    <button id="treemap">treemap</button>
+    <button id="edge_bundling">edge bundling</button>
+  </header>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.4.12/d3.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/2.7.4/d3.layout.min.js"></script>
-  <script src="scripts/chord_layout.js"></script>
+  <script src="scripts/main.js"></script>
+
+  <div id="viz">
+    <script src="scripts/chord_layout.js"></script>
+  </div>
 
   <footer>
     <ul>
@@ -23,4 +36,4 @@
     </ul>
   </footer>
 </body>
-</html> 
+</html>
