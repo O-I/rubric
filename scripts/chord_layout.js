@@ -17,7 +17,7 @@ var layout = d3.layout.chord()
 var path = d3.svg.chord()
              .radius(innerRadius);
  
-var svg = d3.select("body").append("svg:svg")
+var svg = d3.select("#viz").append("svg:svg")
             .attr("width", width)
             .attr("height", height)
             .append("svg:g")
