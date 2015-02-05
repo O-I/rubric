@@ -6,7 +6,7 @@ This is a personal exploration of D3, JavaScript, and data visualization.
 
 ### Data Set
 
-The data set is a hodgepodge of YAML, JSON, and CSV files that represent relationships between Ruby classes in the core library.
+The data set is a hodgepodge of YAML, JSON, and CSV files that represent relationships between Ruby classes in the core library. Raw information was scraped from [Ruby-Doc.org](http://ruby-doc.org) and processed using several custom `rake` tasks.
 
 ### Visualizations
 
@@ -18,7 +18,7 @@ Illustrates the class-superclass relationship of Ruby core classes.
 
 Each class is connected to its superclass by a tapering chord. For example, `Class < Module` is represented by a bisque colored chord that narrows as it travels from the `Class` arc to the `Module` arc.
 
-Hovering over a particular class arc reveals the relationships for the that particular class. For example, hovering over `Object` reveals its connections to its 40 direct children and its parent class `BasicObject`.
+Hovering over a particular class arc reveals the relationships for that particular class. For example, hovering over `Object` reveals its connections to its 40 direct children and its parent class `BasicObject`.
 
 Hovering over a chord reveals a tooltip containing the class inheritance it represents, e.g., hovering over the Paolo Veronese green chord shows `Integer < Numeric`.
 
